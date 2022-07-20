@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    &__skillslist {
+        width: 100%;
+        
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 45px;
+    
+        font-size: 22px;
+        
+        &_cell {
+            width: 20%;
+            height: 80px;
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            text-align: center;
+            font-weight: 400;
+
+            background-position: top center;
+            background-size: 35px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.HTML5 {
+    background-image: url(../../../../assets/svg/html.svg);
+}
+
+.CSS3 {
+    background-image: url(../../../../assets/svg/css.svg);
+}
+
+.JavaScript {
+    background-image: url(../../../../assets/svg/javascript.svg);
+}
+
+.React {
+    background-image: url(../../../../assets/svg/react.svg);
+}
+
+.TypeScript {
+    background-image: url(../../../../assets/svg/typescript.svg);
+}
+
+.Redux {
+    background-image: url(../../../../assets/svg/redux.svg);
+}
+
+.SASS {
+    background-image: url(../../../../assets/svg/sass.svg);
+}
+
+.Webpack {
+    background-image: url(../../../../assets/svg/webpack.svg);
+}
+
+.Git {
+    background-image: url(../../../../assets/svg/git.svg);
+}
+
+.Github {
+    background-image: url(../../../../assets/svg/github.svg);
+}

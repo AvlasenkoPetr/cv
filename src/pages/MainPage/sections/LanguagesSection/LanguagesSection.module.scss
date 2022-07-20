@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+
+    &__content {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40%;
+
+        p {
+            height: 30px;
+            // padding-left: 40px;
+
+            display: flex;
+            align-items: center;
+
+            font-size: 22px;
+            font-weight: 400;
+            
+            background-position: center left;
+            background-size: 30px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+// .russia {
+//     background-image: url(../../../../assets/images/russia.png);
+// }
+
+// .britain {
+//     background-image: url(../../../../assets/images/britain.png);
+// }

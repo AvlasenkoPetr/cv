@@ -1,0 +1,136 @@
+.container {
+    width: 80%;
+    min-height: 300px;
+    padding: 30px 10px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    background-color: rgb(26, 26, 28);
+    border-radius: 20px;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: .2s linear;
+
+    &:hover {
+        color: white;
+
+        a {
+            border-color: white;
+        }
+
+        .container__footer {
+            a {
+                opacity: 1;
+            }
+        }
+    }
+
+    a {
+        width: 90%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 15px;
+        border: 2px solid rgba(255, 255, 255, 0.6);
+
+        transition: .2s linear;
+    }
+
+
+    &__img {
+        width: 100%;
+        border-radius: 15px;
+
+        object-position: center;
+        object-fit: contain;
+    }
+
+    &__title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    &__technologies {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        div {
+            width: 25px;
+            height: 25px;
+        
+            background-position: center;
+            background-size: 25px;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__footer {
+        width: 90%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            width: 25px;
+            height: 25px;
+            border: none;
+            
+            background-image: url(../../../assets/svg/github.svg);
+            background-position: center;
+            background-size: 25px;
+            background-repeat: no-repeat;
+
+            opacity: 0.6;
+        }
+    }
+}
+
+.HTML5 {
+    background-image: url(../../../assets/svg/html.svg);
+}
+
+.CSS3 {
+    background-image: url(../../../assets/svg/css.svg);
+}
+
+.JavaScript {
+    background-image: url(../../../assets/svg/javascript.svg);
+}
+
+.React {
+    background-image: url(../../../assets/svg/react.svg);
+}
+
+.TypeScript {
+    background-image: url(../../../assets/svg/typescript.svg);
+}
+
+.Redux {
+    background-image: url(../../../assets/svg/redux.svg);
+}
+
+.SASS {
+    background-image: url(../../../assets/svg/sass.svg);
+}
+
+.Webpack {
+    background-image: url(../../../assets/svg/webpack.svg);
+}
+
+.Git {
+    background-image: url(../../../assets/svg/git.svg);
+}
+
+.Github {
+    background-image: url(../../../assets/svg/github.svg);
+}
