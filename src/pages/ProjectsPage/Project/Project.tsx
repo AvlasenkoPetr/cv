@@ -3,7 +3,7 @@ import styles from './Project.module.scss';
 
 type Technologies = Skills | 'Team'
 
-interface IProps {
+export interface IProjectProps {
     title: string;
     imageLink: string;
     deployLink: string;
@@ -12,7 +12,7 @@ interface IProps {
     githubRepo: string;
 }
 
-export const Project: React.FC<IProps> = ({ title, imageLink, deployLink, technologies, date, githubRepo }) => {
+export const Project: React.FC<IProjectProps> = ({ title, imageLink, deployLink, technologies, date, githubRepo }) => {
     return (
         <div className={styles.container}>
             <a href={deployLink} target="_blank">
@@ -21,7 +21,7 @@ export const Project: React.FC<IProps> = ({ title, imageLink, deployLink, techno
             <h2 className={styles.container__title}>{title}</h2>
             <div className={styles.container__technologies}>
                 {technologies.map((technology) => {
-                    return <div className={styles[technology]}></div>
+                    return <div className={styles[technology]} key={technology}></div>
                 })}
             </div>
             <div className={styles.container__footer}>

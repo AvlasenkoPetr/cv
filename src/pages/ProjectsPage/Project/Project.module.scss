@@ -1,6 +1,5 @@
 .container {
     width: 80%;
-    min-height: 300px;
     padding: 30px 10px 20px;
 
     display: flex;
@@ -133,4 +132,46 @@
 
 .Github {
     background-image: url(../../../assets/svg/github.svg);
+}
+
+@media(max-width: 1024px) {
+    .container {
+        &__title {
+            font-size: 22px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        padding: 20px 10px;
+        gap: 20px;
+
+        &__title {
+            font-size: 20px;
+        }
+        
+        &__footer {
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .container {
+        padding: 15px 10px;
+        gap: 15px;
+
+        &__title {
+            font-size: 16px;
+        }
+
+        &__technologies {
+            div {
+                width: 20px;
+                height: 20px;
+                background-size: 20px;
+            }
+        }
+    }
 }
