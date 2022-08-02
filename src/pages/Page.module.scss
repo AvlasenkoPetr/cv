@@ -1,0 +1,27 @@
+.container {
+    padding: 130px 30% 70px;
+}
+
+@media(max-width: 1440px) {
+    .container {
+        padding: 90px 20% 50px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .container {
+        padding: 90px 15% 50px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        padding: 90px 5% 50px;
+    }
+}
+
+@media(max-width: 425px) {
+    .container {
+        padding: 90px 20px 50px;
+    }
+}

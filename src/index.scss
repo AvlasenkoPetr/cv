@@ -44,3 +44,23 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+
+@media(max-width: 1440px) {
+  h3 {
+    font-size: 28px;
+  }
+}
+
+@media(max-width: 1024px) {
+  h3 {
+    margin-bottom: 40px;
+    font-size: 26px;
+  }
+}
+
+@media(max-width: 768px) {
+  h3 {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}

@@ -37,3 +37,32 @@
         }
     }
 }
+
+@media(max-width: 1024px) {
+    .container {
+        &__date {
+            justify-content: start;
+        }
+
+        &__result {
+            justify-content: end;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        font-size: 14px;
+
+        &__place {
+            text-align: center;
+        }
+
+        &__result {
+            a {
+                hyphens: auto;
+                -webkit-hyphens: auto;
+            }
+        }
+    }
+}

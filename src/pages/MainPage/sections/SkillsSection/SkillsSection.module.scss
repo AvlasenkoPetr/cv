@@ -68,3 +68,47 @@
 .Github {
     background-image: url(../../../../assets/svg/github.svg);
 }
+
+@media(max-width: 1024px) {
+    .container {
+        &__skillslist {
+            font-size: 20px;
+
+            row-gap: 35px;
+
+            &_cell {
+                height: 70px;
+                background-size: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        &__skillslist {
+            font-size: 18px;
+
+            row-gap: 30px;
+
+            &_cell {
+                height: 60px;
+                background-size: 25px;
+            }
+        }
+    }
+}
+
+@media(max-width: 500px) {
+    .container {
+        &__skillslist {
+            font-size: 20px;
+
+            &_cell {
+                width: 50%;
+                height: 70px;
+                background-size: 35px;
+            }
+        }
+    }
+}

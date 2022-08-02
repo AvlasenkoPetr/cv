@@ -1,17 +1,18 @@
 import { Header } from "../../components/Header/Header";
-import styles from './MainPage.module.scss';
 import { AboutSection } from "./sections/AboutSection/AboutSection";
 import { ContactsSection } from "./sections/ContactsSection/ContactsSection";
 import { EducationSection } from "./sections/EducationSection/EducationSection";
 import { LanguagesSection } from "./sections/LanguagesSection/LanguagesSection";
 import { NameSection } from "./sections/NameSection/NameSection";
 import { SkillsSection } from "./sections/SkillsSection/SkillsSection";
+import styles from './MainPage.module.scss';
+import pageStyle from '../Page.module.scss';
 
 export const MainPage: React.FC = () => {
     return (
         <>
             <Header />
-            <div className={styles.container}>
+            <div className={`${styles.container} ${pageStyle.container}`}>
                 <NameSection name="Avlasenko Petr" description="Junior front-end developer" />
                 <AboutSection />
                 <ContactsSection 

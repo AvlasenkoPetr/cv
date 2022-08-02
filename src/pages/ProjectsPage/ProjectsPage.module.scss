@@ -1,34 +1,8 @@
 .container {
-    padding: 130px 30% 70px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     gap: 50px;
-}
-
-@media(max-width: 1440px) {
-    .container {
-        padding: 90px 20% 50px;
-    }
-}
-
-@media(max-width: 1024px) {
-    .container {
-        padding: 90px 15% 50px;
-    }
-}
-
-@media(max-width: 768px) {
-    .container {
-        padding: 90px 5% 50px;
-    }
-}
-
-@media(max-width: 425px) {
-    .container {
-        padding: 90px 50px 50px;
-    }
 }

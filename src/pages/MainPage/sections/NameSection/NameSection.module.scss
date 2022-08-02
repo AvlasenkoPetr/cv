@@ -28,3 +28,60 @@
         object-position: center -55px;
     }
 }
+
+@media(max-width: 1440px) {
+    .container {
+        &__title {
+            &_name {
+                font-size: 34px;
+            }
+
+            &_description {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .container {
+        &__title {
+            &_name {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        gap: 15%;
+
+        &__title {
+            &_name {
+                font-size: 30px;
+            }
+        }
+
+        &__img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+@media(max-width: 425px) {
+    .container {
+        gap: 10%;
+
+        &__title {
+            &_name {
+                font-size: 28px;
+            }
+
+            &_description {
+                font-size: 18px;
+            }
+        }
+    }
+}
